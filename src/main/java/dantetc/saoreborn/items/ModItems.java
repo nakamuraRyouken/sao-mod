@@ -9,13 +9,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
     public static ItemFoods lol;
-    public static DamagePot posion;
+    public static DamagePot poison;
     public static HealthPot health;
     public static ItemSwords adminsword;
     public static ItemSwords elcsword;
     public static void init(){
         lol = register(new ItemFoods(5, 10, true));
-        posion = register(new DamagePot( 0, 0.0f, true));
+        poison = register(new DamagePot( 0, 0.0f, true));
         health = register(new HealthPot( 0, 0.0f, true));
         elcsword = register(new ItemSwords(SaoReborn.ElucidatorMaterial,true,true,"elucidatorsword"));
         adminsword = register(new ItemSwords(SaoReborn.adminToolMaterial,false,true,"adminsword"));
